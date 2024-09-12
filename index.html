@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Programming Language</title>
+</head>
+<body>
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+            <legend>Favorite Programming Language Survey</legend>
+
+            <div>
+                <label for="first-name">First Name</label>
+                <input type="text" id="firstName" name="first_name">
+            </div>
+
+            <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="lastName" name="last_name">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="status">Status</label>
+                <select id="status" name="user-status">
+                    <option value="student">Student</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <p>Choose your favorite programming language:</p>
+            <div>
+                <input type="radio" name="html" value="html"> HTML<br>
+                <input type="radio" name="CSS" value="CSS"> CSS<br>
+                <input type="radio" name="javascript" value="javascript"> JaveScript<br><br><br>
+            </div>
+
+            <div>
+                <label for="comments">Comments</label>
+                <textarea id="comment" name=comments></textarea><br><br>
+            </div>
+
+            <div>
+                <label for="date">Current Date</label>
+                <input type="date" id="date" name="date"><br><br>
+            </div>
+
+            <div>
+                <input type="checkbox">Sign up for our newsletter<br>
+                <input type="checkbox"> Agree to terms and conditions <br><br><br>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
