@@ -1,0 +1,40 @@
+/* General form styling */
+form {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+/* Legend styling */
+legend {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: 10%;
+    display: inline-block;
+}
+
+/* Form elements center-aligned */
+.form1, .form2, .form3, .form7, .button {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* form4 and form5 next to each other */
+.form4, .form5 {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+/* form6's radio selectors next to each other */
+.form6 input {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* form8's checkboxes next to each other */
+.form8 input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px;
+}
