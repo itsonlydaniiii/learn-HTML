@@ -1,61 +1,123 @@
-<html lang="en">
+<!DOCTYPE html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/css" src="form.css"></script>
     <title>Favorite Programming Language</title>
+    <style>
+        /* General form styling */
+        form {
+            max-width: 70%;
+            margin: 0 auto;
+            text-align: center; /* Centers the entire form content */
+        }
+
+        /* Legend styling */
+        legend {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-left: 10%; /* Positioned 10% from the left */
+            width: fit-content; /* Makes the legend just as wide as its content */
+        }
+
+        /* Center-align form1, form2, form3 */
+        .form1, .form2, .form3, .form7 {
+            margin: 10px auto; /* Adds spacing and centers each form section */
+            text-align: left; /* Aligns the labels and inputs to the left */
+            width: 60%; /* Limits the width to 60% of the parent container */
+        }
+
+        /* form4 and form5 next to each other */
+        .form4, .form5 {
+            display: inline-block;
+            width: 45%; /* Each takes up 45% of the form width */
+            text-align: left; /* Aligns text to the left within each block */
+            margin: 10px 0;
+            vertical-align: top; /* Aligns both to the top */
+        }
+
+        /* form6's radio selectors in a horizontal row */
+        .form6 input[type="radio"] {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .form6 label {
+            margin-right: 20px;
+        }
+
+        /* form8's checkboxes next to each other */
+        .form8 input[type="checkbox"] {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .form8 label {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        /* Center the submit button */
+        .button {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <form action="/form-handling-url" method="post">
         <fieldset>
-            <legend>Favorite Programming Language Survey</legend>
+            <legend>Favorite Programming Language Survey</legend><br/>
 
-            <div>
-                <label for="first-name">First Name</label>
+
+            <div class="form1">
+                <label for="first-name">First Name</label><br/>
                 <input type="text" id="firstName" name="first_name">
             </div>
 
-            <div>
-                <label for="last-name">Last Name</label>
+            <div class="form2">
+                <label for="last-name">Last Name</label><br/>
                 <input type="text" id="lastName" name="last_name">
             </div>
 
-            <div>
-                <label for="email">Email</label>
+            <div class="form3">
+                <label for="email">Email</label><br/>
                 <input type="text" id="email" name="email">
             </div>
 
-            <div>
-                <label for="status">Status</label>
+            <div class="form4">
+                <label for="status">Status</label><br/>
                 <select id="status" name="user-status">
                     <option value="student">Student</option>
                     <option value="instructor">Instructor</option>
                     <option value="guest">Guest</option>
                 </select>
+            </div><br/>
+
+            <div class="form5"></div>
+                <label for="date">Current Date</label><br/>
+                <input type="date" id="date" name="date"><br><br>
             </div>
 
             <p>Choose your favorite programming language:</p>
-            <div>
+            <div class="form6">
                 <input type="radio" name="html" value="html"> HTML<br>
                 <input type="radio" name="CSS" value="CSS"> CSS<br>
                 <input type="radio" name="javascript" value="javascript"> JaveScript<br><br><br>
             </div>
 
-            <div>
-                <label for="comments">Comments</label>
+            <div class="form7">
+                <label for="comments">Comments</label><br/>
                 <textarea id="comment" name=comments></textarea><br><br>
             </div>
 
-            <div>
-                <label for="date">Current Date</label>
-                <input type="date" id="date" name="date"><br><br>
-            </div>
-
-            <div>
+            <div class="form8">
                 <input type="checkbox">Sign up for our newsletter<br>
                 <input type="checkbox"> Agree to terms and conditions <br><br><br>
             </div>
 
-            <div>
+            <div class="button">
                 <button type="submit">Submit</button>
             </div>
         </fieldset>
