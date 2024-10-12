@@ -4,13 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning the Forms</title>
+    <style>
+        /* General form styling */
+        form {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        /* Legend styling */
+        legend {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            position: relative;
+            left: 10%;
+            display: inline-block;
+        }
+
+        /* Form elements center-aligned */
+        .form1, .form2, .form3, .form7, .button {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        /* form4 and form5 next to each other */
+        .form4, .form5 {
+            display: inline-block;
+            width: 48%;
+            vertical-align: top;
+        }
+
+        /* form6's radio selectors next to each other */
+        .form6 input {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* form8's checkboxes next to each other */
+        .form8 input[type="checkbox"] {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello, Forms!</h1>
     <form action="/form-handling-url" method="post">
     <!--Technically, all of its attributes are optional. It's standard practice to always set at least the action attribute and the method attribute:
         - The action attribute defines the location (URL) where the form's collected data should be sent when it is submitted.
-        - The method attribute defines which HTTP method to send the data with. Browsers support only two values for this attribute: "get" and "post". You will use "post" 99% of the time.-->
+        - The method attribute defines which HTTP method to send the data with. Browsers support only two values for this attribute: "get" and "post". 
+        You will use "post" 99% of the time.-->
         <fieldset> <!--used for grouping elements within a form-->
             <legend>Add User</legend> <!--used to give a caption or title to that grouping of elements-->
 
