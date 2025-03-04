@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Emmet is built into VS and allows you to create full tags by using simple shortcuts-->
+     div + enter 
+     <div></div>
+
+     button + enter 
+     <button></button>
+
+     <!-- there are more detailed listing shortcuts that can be created-->
+      <!-- use tab to navigate from item to item - the cursor gets moved dynamically-->
+      header>nav>ul>il*3 + enter 
+      <header>
+        <nav>
+            <ul>
+                <il></il>
+                <il></il>
+                <il></il>
+            </ul>
+        </nav>
+      </header>
+
+    <!-- you can also create sibling tags instead of the above child tags-->
+     header+main+footer  +  enter 
+     <header></header>
+     <main></main>
+     <footer></footer>
+
+     <!-- Combinging child & sibling-->
+     (header>nav)+main+footer  +  enter 
+      <header>
+        <nav></nav>
+      </header>
+      <main></main>
+      <footer></footer>
+
+
+</body>
+</html>
