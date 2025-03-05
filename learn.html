@@ -1463,6 +1463,7 @@ name.
         link to files on your own website's file structure-->
 <img src="/Users/itsonlydaniii/Downloads/Screenshot 2024-08-07 at 14.12.50.png"/>
 
+<<<<<<< HEAD
 
 
 
@@ -1482,3 +1483,39 @@ name.
   </table>
 
   
+=======
+<!-- SVG are scalable images which means they will easily scale to any size and retain their quality without increasing their filesize.
+ SVGs are often used for:
+
+Icons
+Graphs/Charts
+Large, simple images
+Patterned backgrounds
+Applying effects to other elements via SVG filters
+
+The are built using XML language
+-->
+  
+  <div class="container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <rect x=0 y=0 width=100 height=100 fill="burlywood"/>
+        <path d="M 10 10 H 90 V 90 L 10 60" fill="transparent" stroke="black" stroke-width="3"/>
+      <circle cx=50 cy=50 r=20 class="svg-circle"/>
+        <g class="svg-text-group">
+          <text x="20" y="25" rotate="10" id="hello-text">Hello!</text>
+          <use href="#hello-text" x="-10" y="65" fill="white"/>
+        </g>
+    </svg>
+    </div>
+
+    <!--CSS
+    .container {
+    max-width: 200px;
+    margin: auto;
+    }
+
+    .svg-circle:hover + .svg-text-group {
+    opacity: 0;
+    }-->
+
+>>>>>>> 76098c83573baf7d51eba2589e0b9746baf22720
