@@ -8,10 +8,11 @@
   </head>
   <body>
     <h1>Table template</h1>
+    <caption>Data about the planets of our solar system (Planetary facts taken from 
+      <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
     <table>
-      <tr>
-        <th> </th>
-        <th> </th>
+      <tr id="head">
+        <th colspan="2"> </th>
         <th>Name</th>
         <th>Mass (10<sup>24</sup>kg)</th>
         <th>Diameter (km)</th>
@@ -24,9 +25,8 @@
         <th>Notes</th>
       </tr>
       <tr>
-        <td>Terrestrial planets</td>
-        <td></td>
-        <td>Mercury</td>
+        <td rowspan="4" colspan="2" id="head">Terrestrial planets</td>
+        <td id="head">Mercury</td>
         <td>0.330</td>
         <td>4,879</td>
         <td>5427</td>
@@ -38,9 +38,7 @@
         <td>Closest to the Sun</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td>Venus</td>
+        <td id="head">Venus</td>
         <td>4.87</td>
         <td>12,104</td>
         <td>5243</td>
@@ -52,9 +50,7 @@
         <td></td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td>Earth </td>
+        <td id="head">Earth </td>
         <td>5.97</td>
         <td>12,756</td>
         <td>5514</td>
@@ -66,9 +62,7 @@
         <td>Our world</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td>Mars </td>
+        <td id="head">Mars </td>
         <td>0.642</td>
         <td>6,792</td>
         <td>3933</td>
@@ -80,9 +74,9 @@
         <td>The red planet</td>
       </tr>
       <tr>
-        <td>Jovian planets</td>
-        <td>Gas giants</td>
-        <td>Jupiter </td>
+        <td rowspan="4" id="head">Jovian planets</td>
+        <td rowspan="2" id="head">Gas giants</td>
+        <td id="head">Jupiter </td>
         <td>1898</td>
         <td>142,984</td>
         <td>1326</td>
@@ -94,9 +88,7 @@
         <td>The largest planet</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td>Saturn</td>
+        <td id="head">Saturn</td>
         <td>568</td>
         <td>120,536</td>
         <td>687</td>
@@ -108,9 +100,8 @@
         <td></td>
       </tr>
       <tr>
-        <td></td>
-        <td>Ice giants</td>
-        <td>Uranus</td>
+        <td rowspan="2" id="head">Ice giants</td>
+        <td id="head">Uranus</td>
         <td>86.8</td>
         <td>51,118</td>
         <td>1271</td>
@@ -122,9 +113,7 @@
         <td></td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td>Neptune</td>
+        <td id="head">Neptune</td>
         <td>102</td>
         <td>49,528</td>
         <td>1638</td>
@@ -136,9 +125,8 @@
         <td></td>
       </tr>
       <tr>
-        <td>Dwarf planets*</td>
-        <td></td>
-        <td>Pluto</td>
+        <td colspan="2" id="head">Dwarf planets*</td>
+        <td id="head">Pluto</td>
         <td>0.0146</td>
         <td>2,370</td>
         <td>2095</td>
